@@ -1,0 +1,9 @@
+# Site settings
+title: J. Guerne Landscaping
+description: >
+  J. Guerne Landscaping has been beatifying the Treasure Coast for over 20 years. We work closely with our customers from design to installation, ensuring quality landscapes.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://jguernelandscaping.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown

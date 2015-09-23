@@ -1,0 +1,27 @@
+{% if page.is_home %}
+  <header id="header" class="alt">
+{% else %}
+  <header id="header">
+{% endif %}
+  <h1><a href="{{ "/" | prepend: site.baseurl }}"><img src="{{ "/images/jglnav.png" | prepend: site.baseurl }}"></span></a></h1>
+  <nav id="nav">
+    <ul>
+      <li><a href="{{ "/" | prepend: site.baseurl }}" title="Home">Home</a></li>
+      <li><a href="{{ "/about" | prepend: site.baseurl }}" title="About Us">About Us</a></li>
+      <li>
+        <a href="#" class="submenu fa-angle-down">Services</a>
+        <ul>
+          <li><a href="{{ "/maintenance" | prepend: site.baseurl }}" title="Maintenance">Maintenance</a></li>
+          <li><a href="{{ "/landscaping" | prepend: site.baseurl }}" title="Landscaping">Landscaping</a></li>
+          <li><a href="{{ "/irrigation" | prepend: site.baseurl }}" title="Irrigation">Maintenance</a></li>
+          <li><a href="{{ "/drainage" | prepend: site.baseurl }}" title="Drainage">Drainage</a></li>
+          <li><a href="{{ "/landscape-lighting" | prepend: site.baseurl }}" title="Landscape Lighting">Landscape Lighting</a></li>
+          <li><a href="{{ "/grading-sod" | prepend: site.baseurl }}" title="Grading and Sod">Grading and Sod</a></li>
+          <li><a href="{{ "/cleanups" | prepend: site.baseurl }}" title="Cleanups">Cleanups</a></li>
+        </ul>
+      </li>
+      <li><a href="{{ "/gallery" | prepend: site.baseurl }}" title="Gallery">Gallery</a></li>
+      <li><a href="{{ "/careers" | prepend: site.baseurl }}" title="Careers">Careers</a></li>
+    </ul>
+  </nav>
+</header>
