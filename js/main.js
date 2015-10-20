@@ -356,4 +356,55 @@ var settings = {
 
 	});
 
+	// Portfolio.
+		var poptroxSettings;
+
+		if (skel.breakpoint('mobile').active)
+			poptroxSettings = {
+				selector: 'a.image',
+				baseZIndex: 100000,
+				overlayClass: 'poptrox-overlay skel-layers-fixed',
+				usePopupDefaultStyling: false,
+				overlayColor: '#222',
+				overlayOpacity: 0.8,
+				windowMargin: 10,
+				useBodyOverflow: false,
+				usePopupNav: false,
+				usePopupEasyClose: true,
+				usePopupCloser: false
+			};
+		else
+			poptroxSettings = {
+				selector: 'a.image',
+				baseZIndex: 100000,
+				overlayClass: 'poptrox-overlay skel-layers-fixed',
+				usePopupDefaultStyling: false,
+				overlayColor: '#222',
+				overlayOpacity: 0.8,
+				windowMargin: 30,
+				useBodyOverflow: false,
+				usePopupNav: true,
+				usePopupEasyClose: false,
+				popupCloserText: ''
+			};
+
+		var $portfolio = $('#portfolio');
+		if ($portfolio.length > 0) {
+
+			$portfolio
+				.poptrox(poptroxSettings)
+				.selectorr({
+					titleSelector: 'h3',
+					fadeOutSpeed: 250,
+					fadeInSpeed: 500
+				});
+
+		}
+
+		var $portfolioPreview = $('#portfolio-preview');
+		if ($portfolioPreview.length > 0)
+			$portfolioPreview.poptrox(poptroxSettings);
+
+	});
+
 })(jQuery);
