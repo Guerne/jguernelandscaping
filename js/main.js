@@ -405,6 +405,4 @@ var settings = {
 		if ($portfolioPreview.length > 0)
 			$portfolioPreview.poptrox(poptroxSettings);
 
-	});
-
 })(jQuery);
