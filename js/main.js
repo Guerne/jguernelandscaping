@@ -354,8 +354,6 @@ var settings = {
 					$('#navPanel')
 						.css('transition', 'none');
 
-	});
-
 	// Portfolio.
 		var poptroxSettings;
 
@@ -404,5 +402,7 @@ var settings = {
 		var $portfolioPreview = $('#portfolio-preview');
 		if ($portfolioPreview.length > 0)
 			$portfolioPreview.poptrox(poptroxSettings);
+
+	});
 
 })(jQuery);
