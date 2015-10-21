@@ -357,7 +357,7 @@ var settings = {
 	// Portfolio.
 		var poptroxSettings;
 
-		if (skel.breakpoint('mobile').active)
+		if (skel.breakpoint('small').active)
 			poptroxSettings = {
 				selector: 'a.image',
 				baseZIndex: 100000,
